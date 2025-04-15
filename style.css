@@ -1,0 +1,405 @@
+body{
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navber {
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    text-decoration: none;
+    padding-inline: 5rem;
+    background-color: whitesmoke;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#navber > h1{
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(247, 123, 7);
+}
+#navber h3 a:hover,
+#navber h3 a.active{
+    color: blue;
+    cursor: pointer;
+}
+
+#button{
+    padding: 10px 18px;
+    background-color: blue;
+    border-radius: 0 40px 0 40px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-bottom-color: 2px solid black;
+}
+
+#button:hover{
+    background-color:#75a1ee;
+    border-radius: 0 20px 0 20px;
+    border-left-color: 2px solid black;
+    
+}
+
+#main{
+    padding-inline: 10rem;
+    justify-items: center;
+}
+
+#step1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    align-items: center;
+    font-size: 1.2rem;
+    
+}
+
+#min >h1{
+    color:blue;
+    font-size: 3rem;
+    font-weight: 5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#step2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 3rem;
+    max-width: 950px;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: #5a8dee;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#step3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-inline: 4rem;
+    
+    
+    
+}
+
+#step4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-inline: 3rem;
+    background-color: #5a8dee;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2.5rem;
+    width: 800px;
+    
+}
+#mainc{
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    
+    background-color: #5a8dee;
+    border-radius: 1rem;
+    text-align: center;
+    width: 850px;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+#maincontainer{
+    max-width: 900px;
+    background-color: #5a8dee;
+    border-radius: 1rem;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 500px;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+
+}
+.h2{
+    padding-top: 2rem;
+}
+
+#maincontainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 0.5rem;
+    text-align: left;
+    
+    
+
+}
+
+#mincontainer1{
+    max-width: 270px;
+    background-color: silver;
+    color: white;
+    min-width: 270px;
+    padding-left: 1rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+#mincontainer1:hover {
+    color: white;
+    background-color: #5a8dee;
+}
+
+#mincontainer2{
+    max-width: 270px;
+    background-color: white;
+    color: blue;
+    min-width: 270px;
+    padding-left: 1rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+#mincontainer2:hover {
+    color: white;
+    background-color: black;
+}
+
+#mincontainer3{
+    max-width: 270px;
+    background-color: white;
+    color: blue;
+    min-width: 270px;
+    padding-left: 1rem;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+#mincontainer3:hover {
+    color: white;
+    background-color: black;
+}
+
+#step5{
+    background-color: #5a8dee;
+
+}
+
+#step6{
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #5a8dee;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: 1fr; /*Default to one column for mobile */
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+@media (min-width: 768px) {
+    .steps-container {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+
+.step1 {
+    background: #789dff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+.step1:hover {
+    background: black;
+    color: white;
+}
+
+.step2 {
+    background: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+.step2:hover {
+    background-color: silver;
+    color: black;
+}
+.step{
+    background-color: silver;
+    padding: 15px;
+    border-radius: 18px 0 18px 0;
+    text-align: left;
+}
+
+.step4 {
+    background: black;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+.step4:hover {
+    background-color: silver;
+    color: black;
+}
+
+.step1 {
+    background: #789dff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1.5rem 0 1.5rem 0;
+}
+.step1:hover {
+    background-color: silver;
+}
+.step-1 {
+    background-color: blue;
+}
+.step-1:hover{
+    background-color: silver;
+}
+.step-2 {
+    background-color: #7d98c967;
+}
+.step-2:hover {
+    background-color: silver;
+}
+.step-3 {
+    background-color: #c5c4c4;
+}
+.step-3:hover {
+    color: white;
+    background-color: black;
+}
+.step-4 {
+    background-color:  #c5c4c4;
+}
+.step-4:hover {
+    background-color: black;
+    color: white;
+}
+.step-5 {
+    background-color: #7d98c967;
+}
+.step-5:hover{
+    background-color: darkgray;
+}
+.step-6 {
+    background-color: #7d98c967;
+}
+.step-6:hover {
+    background-color: darkgray;
+}
+.step-7{
+    background-color: blue;
+}
+
+.step-7:hover {
+    background-color: silver;
+}
+#step7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding-inline: 2rem;
+    background-color: #5a8dee;
+    margin-top: 3rem;
+    width: 800px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#lastdiv {
+    display: flex;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    font-size: 1.1rem;
+    height: 26rem;
+    justify-content: space-between;
+    scroll-padding-left: 1rem;
+    padding-inline: 10rem;
+    gap: 3rem;
+    padding-top: 3rem;
+
+}
+#a{
+    text-decoration: none;
+    color: white;
+}
+#contact {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    margin-left: -15rem;
+    
+}
+.minh1 {
+    color: black;
+}
+.minh2 {
+    color: blue;
+}
+
+.minh3 {
+    color: blue;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
